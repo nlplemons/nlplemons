@@ -1,0 +1,13 @@
+[Core]
+Name = yaml2wiki
+Module = yaml2wiki
+
+# [Nikola]
+# PluginCategory = Task #CompilerExtension
+# Compiler = rest
+
+[Documentation]
+Author = Anna Rogers
+Version = 0.1
+Website = https://nlplemons.github.io/
+Description = Generate wiki pages from structured yaml files

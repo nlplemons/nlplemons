@@ -1,0 +1,34 @@
+<!--%!
+    import pandas as pd
+%-->
+
+
+<!--%def name="make_title">
+<div id="meta-${row['Title']}" style="background-color: #1c7430">
+</div>
+</%def-->
+
+# assume the data is in a "d" dictionary
+
+
+
+
+
+
+## https://www.tutorsground.in/node/10
+## Purchase Details:
+##
+## Product code: ${item_code}
+## Price: ${item_price}
+##
+## Billing Address:
+##   ${personal_info['name']}
+## %for value in personal_info['location']:
+##   ${value}
+## %endfor
+## %for value in personal_info['region'].values():
+##   ${value}
+## %endfor
+##
+##
+OUT = Template(filename="invoice.mako").render(**Invoice)
